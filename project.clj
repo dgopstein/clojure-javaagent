@@ -10,7 +10,7 @@
   :profiles {:instrumentation
              {:main clojure-javaagent.instrumentation
               :aot [clojure-javaagent.instrumentation]
-              :uberjar-name "instrumentation.jar"
-              ; Note the '_' instead of '-' since we're describing java packages
-              :manifest {"Agent-Class" "clojure_javaagent.instrumentation"}}}
+              ; Note the '_' instead of '-' since we're describing a java package
+              :manifest {"Agent-Class" "clojure_javaagent.instrumentation"
+              :uberjar-name "instrumentation.jar"}}}
   :main clojure-javaagent.core)

@@ -17,7 +17,7 @@
   (let [project-path   (.getCanonicalPath (clojure.java.io/file "."))
         javaagent-path (str project-path "/target/instrumentation.jar")]
 
-    ; Attach the instrumentation javaagent to this projecess
+    ; Attach the instrumentation javaagent to this process
     (load-instrumentation javaagent-path)
 
     ; Find the size of an object
