@@ -1,7 +1,6 @@
 (ns clojure-javaagent.core
-  (:import
-   [com.sun.tools.attach VirtualMachine]
-   [java.lang.management ManagementFactory])
+  (:import [com.sun.tools.attach VirtualMachine]
+           [java.lang.management ManagementFactory])
   (:require [clojure-javaagent.instrumentation :as inst]))
 
 (defn pid []
